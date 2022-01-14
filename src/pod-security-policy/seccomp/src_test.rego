@@ -166,6 +166,8 @@ test_input_init_seccomp_pod_container_annotation_both_allowed {
 test_input_init_seccomp_pod_container_annotation_mixed_allowed {
     input := { "review": input_review_init_pod_container_mixed, "parameters": input_parameter_in_list}
     results := violation with input as input
+    print(input)
+    print(results)
     count(results) == 1
 }
 
